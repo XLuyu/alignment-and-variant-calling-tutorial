@@ -32,6 +32,12 @@ curl -s http://hypervolu.me/~Eerik/genomes/E.coli_K12_MG1655.fa | head
 # ...
 ```
 
+As you see, genome is actually a string of A,C,T, and G (sometimes N for unknown). Currently, sequencing technologies are able to **randomly** recognize a segment on it (viz. a substring), with length of 100~300. People usually generate such substring million times so that genome is tiled 30 times in the dataset. Each substring is called **read**. 
+
+For example, the picture below is a part of genome. You can see its sequence at the bottom. The grey bars in the middle are reads.
+
+![](https://i.imgur.com/cfQyl6W.png)
+
 ### E. Coli K12 Illumina 2x300bp MiSeq sequencing results
 
 For testing alignment, let's get some data from a [recently-submitted sequencing run on a K12 strain from the University of Exeter](http://www.ncbi.nlm.nih.gov/sra/?term=SRR1770413). To download it from NCBI, we need to use an executable `fastq-dump` in the `sra-tools` (Part 0, 1.). It allows directly downloading data from a particular sequencing run ID:
@@ -190,5 +196,5 @@ Play with it to get familiar.
 
 ## Part 4: Resource
 
-The human reference [hg38](http://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz)
+The human reference genome [hg38](http://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz)
 

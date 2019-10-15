@@ -192,9 +192,13 @@ After IGV starts, you can see a window. Then,
 1. load genome fasta file ![](https://i.imgur.com/ztm4SOB.png)
 2. load bam and vcf file ![](https://i.imgur.com/9O9RZsz.png)
 
-Play with it to get familiar.
+Play with it to get familiar. A SNP looks like this:
+
+![](https://i.imgur.com/95Ys3rE.png)
+
+While reference genome is T, this individual has 50% A and 50% T. This could make the guy has different hair color or something else.
 
 ## Part 4: Resource
 
-The human reference genome [hg38](http://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz)
+The human reference genome [hg38](http://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz). Note that E. coli has only one chromosome, but human has 22+XY. Each chromosome is an independent long string.
 

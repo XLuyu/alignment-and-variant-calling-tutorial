@@ -6,7 +6,7 @@ This tutorial is forked from [ekg](https://github.com/ekg/alignment-and-variant-
 
 ## Part 0: Setup
 
-We're going to use a bunch of fun tools for working with genomic data on Linux. In fact, you don't really need to install all of them now at one go. Instead, You may want to install each of them when it is required.
+We're going to use a bunch of fun tools for working with genomic data on Linux (For SoC student, you can use xcnc cluster). In fact, you don't really need to install all of them now at one go. Instead, You may want to install each of them when it is required.
 
 1. [sra-tools](https://github.com/ncbi/sra-tools/wiki): Download publicly available dataset from NCBI
 1. [bwa](https://sourceforge.net/projects/bio-bwa/files/): Align reads to reference genome
@@ -200,6 +200,7 @@ While reference genome is T, this individual has 50% A and 50% T. This could mak
 
 ## Part 4: Resource
 
-The human reference genome [hg38](http://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz). Note that E. coli has only one chromosome, but human has 22+XY. Each chromosome is an independent long string.
+* The human reference genome [hg38](http://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz). Note that E. coli has only one chromosome, but human has 22+XY. Each chromosome is an independent long string.
 
-To extract read information from BAM files in coding manner, a easy way is to learn Python and use the package [Pysam](https://pysam.readthedocs.io/en/latest/index.html)
+* To extract read information from BAM files in coding manner, a easy way is to learn Python and use the package [Pysam](https://pysam.readthedocs.io/en/latest/index.html)
+

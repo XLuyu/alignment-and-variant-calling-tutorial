@@ -202,5 +202,5 @@ While reference genome is T, this individual has 50% A and 50% T. This could mak
 
 * The human reference genome [hg38](http://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz). Note that E. coli has only one chromosome, but human has 22+XY. Each chromosome is an independent long string.
 
-* To extract read information from BAM files in coding manner, a easy way is to learn Python and use the package [Pysam](https://pysam.readthedocs.io/en/latest/index.html)
+* To extract read information from BAM files in coding manner, an easy way is to learn Python and use the package [Pysam](https://pysam.readthedocs.io/en/latest/index.html)
 

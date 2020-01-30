@@ -32,5 +32,11 @@ The feature I exploit is the fact that: Due to DNA degradation, for most positio
 
 With hundreds of samples and millions of reads for each sample, machine learning may be helpful to find out which regions/positions show significant difference on sequencing probability. Then, those positions can be used to make FF prediction.
 
+## nucleosome
+DNA wraps around nucleosome, which prevents DNA from degradation. Fetal DNA suffers more from degradation and thus reads from fetus start a little bit closer to center of nucleosome. By inferring positions of nucleosome, a distribution of read start point (distance to the center of the nearest nucleosome) can be obtained and used as feature.
+
+## AI potential
+Nowadays, AI usually refers to deep learning. It provides better modeling ability. I have tried a naive DNN to perform FF prediction and yielded a slightly better result than Linear/Ridge regression. However, the main challenge in this project is feature engineering. We only have hundreds of samples, but read start point distribution also ranges from -150 to 150. This means feature is in the same magnitude of samples. But machine learning is practical when sample size is much larger then feature size.
+
 ## Have a glance at data
 To get familar with NGS data (Actually quite simple), you may want to go through a short tutorial https://github.com/taoistly/alignment-and-variant-calling-tutorial . For NIPT, part 2 and later sections are not very relevant.
